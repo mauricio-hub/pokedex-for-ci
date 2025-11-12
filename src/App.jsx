@@ -18,6 +18,7 @@ const App = () => {
     return <LoadingSpinner />
   }
   if (error) {
+    console.log('error',error)
     return <ErrorMessage error={error} />
   }
 
