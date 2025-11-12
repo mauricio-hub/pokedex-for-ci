@@ -18,5 +18,11 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
-      - name: Run ESLint
+      - name: ejecutar ESLint
         run: npm run eslint
+      - name: ejecutar build
+        run: npm run build
+      - name: ejecutar tests
+        run: npm run test
+      - name: Finish
+        run: echo "Workflow completed successfully"
