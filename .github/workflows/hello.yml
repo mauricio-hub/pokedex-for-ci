@@ -7,11 +7,11 @@ on:
 
 jobs:
   hello_world:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: Echo the message
-        run: |
-          echo "Hola que tal!"
+        run: echo "Hola que tal!"
       - name: Dime la fecha
         run: date
-      - run: ls -l
+      - name: List files
+        run: ls -l
