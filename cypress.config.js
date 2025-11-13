@@ -7,5 +7,8 @@ module.exports = defineConfig({
     },
     baseUrl: 'http://localhost:5000',
     specPattern: 'cypress/e2e/**/*.{js,jsx,ts,tsx}',
+    supportFile: false,
+    video: false,
+    screenshotOnRunFailure: false,
   },
 })

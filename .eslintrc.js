@@ -17,7 +17,7 @@ module.exports = {
     "sourceType": "module"
   },
   "plugins": [
-    "react", "jest"
+    "react", "jest", "cypress"
   ],
   "rules": {
     "indent": [
@@ -46,5 +46,16 @@ module.exports = {
     ],
     "no-console": "warn",
     "react/prop-types": 0
-  }
+  },
+  "overrides": [
+    {
+      "files": ["cypress/**/*.js", "*.config.js"],
+      "env": {
+        "cypress/globals": true
+      },
+      "rules": {
+        "no-unused-vars": "off"
+      }
+    }
+  ]
 }
